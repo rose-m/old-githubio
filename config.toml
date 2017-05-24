@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "A Test Site"
+theme = "hugo-cactus-theme"
+
+[params]
+    name = "Michael Rose"
+    description = "This only represents my personal opinion"
+    bio = "Programmer & Play-Kid"
