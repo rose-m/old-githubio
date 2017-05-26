@@ -19,4 +19,4 @@ rm -rf public/*
 echo "Generating site"
 hugo 
 echo "Updating master pages branch"
-# cd public && git add --all && git commit -m "Publishing to master (publish.sh)"
+cd public && git add --all && git commit -m "Publishing to master (publish.sh)"
