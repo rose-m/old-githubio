@@ -5,5 +5,15 @@ theme = "hugo-cactus-theme"
 
 [params]
     name = "Michael Rose"
-    description = "This only represents my personal opinion"
-    bio = "Programmer & Play-Kid"
+    description = "My personal opinion and stories about the stuff I'm playing with."
+    bio = "Software Developer with an urge to experiment"
+    aboutAuthor = "I am a Software Developer at collaboration Factory AG with an always present urge to play with new technology and stuff."
+    twitter = "_rose_m_"
+
+    Paginate = 10
+
+    iconFont = "font-awesome"
+
+[social]
+    twitter  = "https://www.twitter.com/_rose_m_"
+    github   = "https://www.github.com/rose-m"
