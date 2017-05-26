@@ -1,0 +1,42 @@
+.profile {
+  margin: @base-margin * 4 0 @base-margin * 2 0;
+
+  header {
+    text-align: center;
+
+    a {
+      &:hover, &:focus, &:active {
+        img.avatar {
+          box-shadow: 0 0 5px @color-border;
+        }
+      }
+    }
+
+    img.avatar {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+
+      border: 3px solid @color-border;
+    }
+
+    h1 {
+      margin: @base-margin / 2 0;
+      font-weight: normal;
+      letter-spacing: normal;
+      font-size: 20px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      color: #aaa;
+    }
+  }
+}
+
+.profile-body {
+  line-height: 1.7em;
+}

@@ -1,0 +1,34 @@
+nav.main-nav {
+  padding: @base-margin @base-margin 0;
+  text-align: right;
+  z-index: 100;
+
+  a {
+    top: 8px;
+    right: 6px;
+    padding: 8px 12px;
+    color: @color-primary;
+    font-size: @font-size-small;
+    line-height: 1.35em;
+
+    transition: color 0.2s;
+    &:hover, &:active, &:focus {
+      color: @color-primary-active;
+    }
+  }
+
+  a.cta {
+    margin-left: 12px;
+    border-radius: 3px;
+    background: @color-primary;
+    color: @color-primary-contrast;
+    border: 1px solid transparent;
+
+    transition: color 0.2s, background 0.2s, border-color 0.2s;
+    &:hover, &:active, &:focus {
+      background: transparent;
+      color: @color-primary;
+      border-color: @color-primary;
+    }
+  }
+}

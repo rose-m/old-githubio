@@ -1,0 +1,27 @@
+@max-width: 700px;
+@max-width-breakpoint: 540px;
+@base-margin: 20px;
+
+@color-text: #666;
+@color-text-light: lighten(@color-text, 15%);
+@color-text-lightest: lighten(@color-text, 30%);
+@color-text-dark: darken(@color-text, 15%);
+@color-heading: @color-text-dark;
+@color-primary: #5badf0;
+@color-primary-active: lighten(@color-primary, 15%);
+@color-primary-contrast: #fff;
+
+@color-border: #eee;
+
+@font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-code: "Source Code Pro", Menlo, Monaco, Courier, monospace;
+@font-size-base: 16px;
+@font-size-small: 13px;
+@font-weight-light: 300;
+@font-weight-code: 500;
+
+.on-small-screens(@rules) {
+  @media screen and (max-width: @max-width-breakpoint) {
+    @rules();
+  }
+}

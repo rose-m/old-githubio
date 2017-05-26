@@ -1,0 +1,185 @@
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: 1.2em;
+  color: @color-text;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.text-light {
+  color: @color-text-light;
+}
+
+.text-dark {
+  color: @color-text-dark;
+}
+
+ul, ol {
+  margin: 0 0 1.25em 0;
+  padding: 0;
+
+  ul, ol {
+    margin: 0 0 0 1em;
+    list-style-position: outside;
+  }
+
+  .on-small-screens({ list-style-position: inside; ul, ol {
+    list-style-position: inside;
+  } })
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @color-heading;
+}
+
+h1, h2, h3 {
+  font-weight: @font-weight-light;
+}
+
+h1 {
+  font-size: @font-size-base * 2;
+  letter-spacing: -1px;
+  .on-small-screens({ font-size: @font-size-base * 1.75; })
+}
+
+h2 {
+  font-size: @font-size-base * 1.5;
+  .on-small-screens({ font-size: @font-size-base * 1.4; })
+}
+
+h3 {
+  font-size: @font-size-base * 1.25;
+  .on-small-screens({ font-size: @font-size-base * 1.2; })
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: @font-size-base;
+}
+
+h5 {
+  font-size: @font-size-base * 0.9;
+}
+
+h6 {
+  font-size: @font-size-base * 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: @color-primary;
+  transition: color 0.2s;
+
+  &:hover, &:focus, &:active {
+    color: @color-primary-active;
+  }
+}
+
+b, strong {
+  font-weight: 500;
+  color: @color-text-dark;
+}
+
+em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 1em @base-margin * 2;
+  padding-left: @base-margin;
+  border-left: 3px solid @color-border;
+
+  .on-small-screens({ margin: 1em 0; padding-left: @base-margin / 2 })
+}
+
+hr {
+  display: block;
+  border: none;
+  height: 1px;
+  margin: @base-margin * 2 auto;
+  background: @color-border;
+}
+
+code, span.code {
+  padding: 4px;
+
+  font-family: @font-family-code;
+  font-weight: @font-weight-code;
+  font-size: 0.8em;
+  background-color: @color-border;
+}
+
+pre {
+  font-family: @font-family-code;
+  font-weight: @font-weight-code;
+  color: @color-text;
+
+  white-space: pre-wrap;
+  padding: @base-margin;
+
+  overflow: auto;
+  border-radius: 3px;
+  line-height: 1.5em;
+  background-color: #f8f8f8;
+
+  .on-small-screens({ padding: @base-margin / 4; })
+}
+
+table {
+  width: 100%;
+  margin: @base-margin 0;
+  border-collapse: collapse;
+  font-size: @font-size-small;
+  line-height: 1.5em;
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead td, td {
+    border-spacing: 0;
+    border-style: solid;
+    padding: @base-margin @base-margin * 1.5;
+    border-width: 1px 0 0 0;
+  }
+
+  thead th, th {
+    text-align: left;
+    padding: @base-margin @base-margin * 1.5;
+    height: @base-margin;
+    font-size: @font-size-small;
+    font-weight: bold;
+    color: @color-text-dark;
+    border-bottom: 1px solid @color-border;
+    cursor: default;
+    white-space: nowrap;
+  }
+
+  tr > td {
+    border-top: 1px solid @color-border;
+  }
+
+  tr:nth-child(odd) > td {
+    background: lighten(@color-border, 5%);
+  }
+
+  .on-small-screens({ thead td, thead th, td, th {
+    padding: @base-margin / 2 (@base-margin / 2) * 1.5;
+  } })
+}
+
+img {
+  max-width: 100%;
+  border-radius: 3px;
+}

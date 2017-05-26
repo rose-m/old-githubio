@@ -1,0 +1,95 @@
+/**
+ * Single Post
+ */
+.post {
+  margin: 4 * @base-margin 0 0 0;
+
+  header {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      display: inline-block;
+      margin: -5px 0 2 * @base-margin 0;
+
+      font-size: @font-size-small;
+      color: @color-text-light;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  .post-body {
+    line-height: 1.7em;
+  }
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+
+  margin: 2 * @base-margin 0;
+  padding: 2 * @base-margin 0;
+
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.4;
+
+  border-top: 1px solid @color-border;
+  border-bottom: 1px solid @color-border;
+
+  > a {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  img.avatar {
+    flex: 0 0 auto;
+
+    margin-right: @base-margin;
+    height: 36px;
+    width: 36px;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee;
+  }
+
+  div.author-details {
+    flex: 1 1 auto;
+    font-weight: 500;
+
+    span {
+      display: block;
+    }
+  }
+
+  section.sharing {
+    flex: 0 0 auto;
+
+    a {
+      font-size: @font-size-small;
+      font-weight: bold;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 4px;
+
+      margin-left: 0.5em;
+
+      transition: opacity 0.2s;
+      &:hover, &:focus, &:active {
+        opacity: 0.8;
+      }
+
+      &.facebook {
+        background: #4361b3;
+      }
+      &.twitter {
+        background: #4fafed;
+      }
+    }
+  }
+}

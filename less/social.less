@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  a.symbol {
+    margin-right: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: @color-text-lightest;
+
+    transition: color 0.2s;
+    &:hover, &:focus, &:active {
+      color: @color-primary;
+    }
+  }
+}
