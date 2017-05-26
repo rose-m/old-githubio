@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://rose-m.github.io"
 languageCode = "en-us"
-title = "A Test Site"
+title = "Michael Rose"
 theme = "hugo-cactus-theme"
 
 [params]
