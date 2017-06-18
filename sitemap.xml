@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rose-m.github.io/post/focus-with-alfred/</loc>
+    <lastmod>2017-06-18T16:59:48+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rose-m.github.io/about/</loc>
     <lastmod>2017-05-21T17:22:01+02:00</lastmod>
   </url>
@@ -13,6 +18,13 @@
   
   <url>
     <loc>https://rose-m.github.io/</loc>
+    <lastmod>2017-06-18T16:59:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rose-m.github.io/post/</loc>
+    <lastmod>2017-06-18T16:59:48+02:00</lastmod>
     <priority>0</priority>
   </url>
   

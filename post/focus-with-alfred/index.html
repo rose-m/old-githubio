@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Michael Rose">
+<meta name="description" content="My personal opinion and stories about the stuff I&#39;m playing with.">
+<meta name="generator" content="Hugo 0.20.7" />
+<title>Focus with Alfred &middot; Michael Rose</title>
+<link rel="shortcut icon" href="https://rose-m.github.io/images/favicon.ico">
+<link rel="stylesheet" href="https://rose-m.github.io/css/style.css">
+<link rel="stylesheet" href="https://rose-m.github.io/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="https://rose-m.github.io/fontawesome/css/font-awesome.min.css">
+
+
+
+
+<meta property="og:title" content="Focus with Alfred" />
+<meta property="og:description" content="Getting work done in the zone with the help of Alfred" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rose-m.github.io/post/focus-with-alfred/" />
+
+
+
+<meta property="article:published_time" content="2017-06-18T16:59:48&#43;02:00"/>
+<meta property="article:modified_time" content="2017-06-18T16:59:48&#43;02:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Focus with Alfred">
+<meta itemprop="description" content="Getting work done in the zone with the help of Alfred">
+
+
+<meta itemprop="dateModified" content="2017-06-18T16:59:48&#43;02:00" />
+<meta itemprop="wordCount" content="350">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Focus with Alfred"/>
+<meta name="twitter:title" content="Focus with Alfred"/>
+<meta name="twitter:description" content="Getting work done in the zone with the help of Alfred"/>
+<meta name="twitter:site" content="@https://www.twitter.com/_rose_m_"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='https://rose-m.github.io'> <span class="arrow">←</span>&nbsp;Home</a>
+	
+
+	
+ 		<a href='/about/'>About</a>
+  	
+
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Focus with Alfred</h1>
+        <h2 class="headline">
+        June 18, 2017
+        <br>
+        
+        </h2>
+    </header>
+    <section class="post-body">
+        
+
+<p>One of things that kept bugging me at work was a problem a lot of may be familiar with: switching contexts far too often. Colleagues come and ask questions, mails arrive, notifications pop up &ndash; a typical workday for me is often interrupted by various things, some more, some less important.</p>
+
+<p>Of course, this immediately kills productivity and concentration especially as a developer &ndash; there&rsquo;s the one image describing it at its core:</p>
+
+<p><img src="https://i.stack.imgur.com/oYpue.png" alt="Developer focus after an interruption" /></p>
+
+<p>As a result of this I was hardly able to really progress in my tasks and needed to turn this over again.</p>
+
+<h2 id="keeping-focus">Keeping Focus</h2>
+
+<p>The approach I took was to take myself certain time blocks, typically either 30 or 45 minutes. Then I&rsquo;d go along and do the following:</p>
+
+<ul>
+<li>disable notifications in macOS</li>
+<li>start a timer to keep track when time is up</li>
+<li>enable flight mode on my mobile</li>
+<li>&hellip; and finally set <code>/dnd</code> mode in Slack and set my <code>/status</code> to indicate to my co-workers that I really don&rsquo;t want to be interrupted</li>
+</ul>
+
+<p>It turned out to be quite successful &ndash; I could definitely get more work done again but one thing was still odd: I was clicking a lot to enable and disable everything. What do you do as a lazy developer? Yes &ndash; you automate.</p>
+
+<h2 id="alfred-to-the-rescue">Alfred to the Rescue</h2>
+
+<p>Some of you may already be familiar with <a href="https://alfredapp.com">Alfred App</a> &ndash; the handy and powerful brother of <em>Spotlight</em>. I have been using it for quite a while now so the decision was easy to create my own workflow for Alfred.</p>
+
+<p>So, that is what happened and here&rsquo;s how it looks:</p>
+
+<p><img src="./focus_start.gif" alt="Starting Focus Mode" /></p>
+
+<p>Using <code>focus 20</code> I can now start my <em>focus time</em> of 20 minutes, automatically have notifications disabled, <em>Slack</em> status set, and all reverted after the time is up. While it is active I can of course stop it manually by using <code>focus</code> again or just see the remaining time:</p>
+
+<p><img src="./focus_stop.gif" alt="Stopping Focus Mode" /></p>
+
+<p>I published this one alongside with another one to easily create screen captures and store them as GIFs &ndash; as used in this post.</p>
+
+<p>Check them out here: <a href="https://github.com/rose-m/alflows">https://github.com/rose-m/alflows</a> and let me know what you think!</p>
+
+    </section>
+</article>
+
+<footer class="post-meta">
+    <a href="https://rose-m.github.io/about">
+        <img class="avatar" src="https://rose-m.github.io/images/avatar.png" />
+        <div class="author-details">
+            <span class="text-dark">Michael Rose</span>
+            <span class="text-light">I am a Software Developer at collaboration Factory AG with an always present urge to play with new technology and stuff.</span>
+        </div>
+    </a>
+    <section class="sharing">
+        <a class="twitter"
+           href="https://twitter.com/intent/tweet?text=https%3a%2f%2frose-m.github.io%2fpost%2ffocus-with-alfred%2f - Focus%20with%20Alfred by @_rose_m_">
+            <span class="icon-twitter"></span>&nbsp;Tweet
+        </a>
+
+        <a class="facebook" href="#"
+           onclick="window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;">
+            <span class="icon-facebook-rect"></span>&nbsp;Share
+        </a>
+
+    </section>
+</footer>
+
+
+
+<ul class="post-list readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div class="social">
+
+
+	
+    <a class="symbol" href="https://www.github.com/rose-m">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/_rose_m_">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Michael Rose
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://rose-m.github.io/js/main.js"></script>
+<script src="https://rose-m.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>
